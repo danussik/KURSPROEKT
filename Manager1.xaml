@@ -1,0 +1,31 @@
+﻿<Window x:Class="KURSACH.Manager1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KURSACH"
+        mc:Ignorable="d"
+        Title='Информационная система "Компьютерный магазин"' Height="450" Width="800" MaxHeight="720" MaxWidth="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="185*"/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Images/приветствие.jpg" Margin="0,1,0,38" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" />
+        <Button x:Name="Clients" Background="AliceBlue" Content="Клиенты" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="50" Width="140" FontSize="20" Click="Clients_Click"/>
+        <Button x:Name="Sells" Background="AliceBlue" Content="Продажа" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,80,0,0" Grid.Row="1" VerticalAlignment="Top" Height="50" Width="140" FontSize="20" Click="Sells_Click"/>
+        <Button x:Name="Products" Click="Product_Click" Background="AliceBlue" Content="Товары" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,153,0,0" Grid.Row="1" VerticalAlignment="Top" Height="50" Width="140" FontSize="20"/>
+        <Button x:Name="Reports" Background="AliceBlue" Content="Отчеты" Click="Report_Click" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,224,0,0" Grid.Row="1" VerticalAlignment="Top" Height="50" Width="140" FontSize="20"/>
+        <Grid Background="BlueViolet" Grid.ColumnSpan="2"></Grid>
+        <Image Source="Images/логотип.png" HorizontalAlignment="Center" RenderTransformOrigin="0.994,0.527"></Image>
+        <TextBlock Text="Header" FontStyle="Italic" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="193,0,0,0"/>
+        <Grid Grid.Row="1" Background="Purple" Grid.ColumnSpan="2" Margin="0,306,0,0" Grid.RowSpan="2"></Grid>
+        <Button Content="Back" Background="Yellow" Name="BtnBack" HorizontalAlignment="Left" Margin="550,7,0,16" Width="80" Grid.Column="1" Click="Back_Click"></Button>
+        <Frame NavigationUIVisibility="Hidden" Grid.RowSpan="3" Grid.ColumnSpan="2" Name="MainFrame"/>
+    </Grid>
+</Window>

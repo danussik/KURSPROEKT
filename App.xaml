@@ -1,0 +1,9 @@
+﻿<Application x:Class="KURSACH.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:KURSACH"
+             StartupUri="Authorization.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
